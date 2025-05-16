@@ -1,0 +1,79 @@
+/* QuestionControls.css - Styles for question control buttons in Evaluation component */
+
+/* Question control buttons */
+.question-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.question-controls .icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.question-controls .icon-button:hover {
+  background-color: #f3f4f6;
+  color: #1a56db;
+  transform: translateY(-1px);
+}
+
+.question-controls .icon-button:active {
+  transform: translateY(0);
+}
+
+.question-controls .icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #f3f4f6;
+}
+
+.question-controls .icon-button:disabled:hover {
+  transform: none;
+  color: #4b5563;
+}
+
+.question-controls .icon-button.danger {
+  color: #e11d48;
+}
+
+.question-controls .icon-button.danger:hover {
+  background-color: #fee2e2;
+  color: #be123c;
+}
+
+/* Option item controls */
+.option-item .icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.option-item .icon-button:hover {
+  background-color: #f3f4f6;
+  color: #1a56db;
+}
+
+.option-item .icon-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+} 

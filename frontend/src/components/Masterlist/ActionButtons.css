@@ -1,0 +1,100 @@
+/* ActionButtons.css - Styles for action buttons in Masterlist component */
+
+.action-button-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: var(--primary-color);
+  color: #ffffff !important;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  justify-content: center;
+}
+
+.action-button-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  color: #ffffff !important;
+}
+
+/* For smaller action buttons */
+.action-button-primary.sm {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.action-button-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  justify-content: center;
+}
+
+.action-button-secondary:hover {
+  background-color: #f9fafc;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+  color: var(--primary-dark) !important;
+}
+
+/* For smaller secondary action buttons */
+.action-button-secondary.sm {
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+/* Override existing action button styles */
+.masterlist-actions .action-button,
+.modal-actions .action-button {
+  background-color: var(--primary-color);
+  color: #ffffff !important;
+  border: none;
+}
+
+.masterlist-actions .action-button:hover,
+.modal-actions .action-button:hover {
+  background-color: var(--primary-dark);
+  color: #ffffff !important;
+}
+
+/* Table actions styling */
+.table-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.table-actions .action-button-primary {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.table-actions .action-button-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  color: #ffffff !important;
+} 
